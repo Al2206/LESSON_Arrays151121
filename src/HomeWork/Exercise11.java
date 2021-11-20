@@ -1,5 +1,3 @@
-//Сформировать двумерный массив размером 10*10. Вывести на экран все
-// элементы выше побочной диагонали.
 package HomeWork;
 public class Exercise11 {
     public static void main(String[] args) {
