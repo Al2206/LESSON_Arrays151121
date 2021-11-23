@@ -4,7 +4,6 @@
 package HomeWork;
 
 import java.util.*;
-
 public class Exercise13 {
     public static void main(String[] args) {
         int[][] array = new int[][]{
@@ -23,16 +22,16 @@ public class Exercise13 {
         System.out.print("\n");
         int n, m, temp;
         Scanner in = new Scanner(System.in);
-        System.out.println("Введите номер первого столбца для замены от 0 до 4:  ");
+        System.out.println("Введите номер первого столбца для замены от 1 до 5:  ");
         n = in.nextInt();
-        System.out.println("Введите номер второго столбца для замены от 0 до 4:  ");
+        System.out.println("Введите номер второго столбца для замены от 1 до 5:  ");
         m = in.nextInt();
         if (n > array.length && m > array.length) ;
         System.out.println("Введено неверное значение");
         for (int i = 0; i < array.length; i++) {
-            temp = array[i][n];
-            array[i][n] = array[i][m];
-            array[i][m] = temp;
+            temp = array[i][n-1];
+            array[i][n-1] = array[i][m-1];
+            array[i][m-1] = temp;
             System.out.println(" Массив с измененным " + n + " столбцом  на " + m + " столбец ." + "\t");
             for (int j = 0; j < array[i].length; j++) {
                 System.out.print(array[i][j] + "\t");
