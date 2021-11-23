@@ -25,9 +25,10 @@ public class Exercise7 {
                     if (array[i][j] < min) {
                         min = array[i][j];
                     }
-                    System.out.println("MIN = " + min + "\n" + "MAX = " + max);
                 }
             }
+            System.out.println("MIN = " + min + "\n" + "MAX = " + max);
         }
+        System.out.println();
     }
 }
