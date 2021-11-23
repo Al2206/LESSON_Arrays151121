@@ -5,11 +5,15 @@ package HomeWork;
 public class Exercise4 {
     public static void main(String[] args) {
         int[] array = new int[30];
-        int result = 0;
-        for (int i = 0; i < array.length; i+=3) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
             array[i] = (int) ((Math.random() * 29 + 1));
-            System.out.println("Значение " + i + " = " + array[i] + ",");
-            System.out.println(result += array[i]);
+            System.out.print(array[i] + "\t");
         }
+        System.out.println();
+        for (int i = 0; i < array.length; i += 3) {
+            sum += array[i];
+        }
+        System.out.print("Сумма = " + sum + "\t");
     }
 }
